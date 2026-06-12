@@ -47,7 +47,7 @@ export function ConverterToolbar({
   }, [result]);
 
   return (
-    <div className="flex flex-col items-center justify-between gap-3 border-b p-3">
+    <div className="flex flex-col items-center justify-between gap-3 border-b p-3 sm:flex-row">
       <ToggleGroup
         type="single"
         value={lib}
