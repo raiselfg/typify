@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/shared/components/theme-provider";
 import { cn } from "@/shared/lib/utils";
 import { Metadata } from "next";
 import { Toaster } from "@/shared/components/ui/sonner";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const display = Space_Grotesk({
@@ -54,6 +55,7 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
         <Toaster position="bottom-right" duration={4000} />
+        <SpeedInsights />
       </body>
     </html>
   );
