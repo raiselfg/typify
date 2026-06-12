@@ -164,24 +164,26 @@
   }
 }
 
-.code-hl .tk-kw {
-  color: var(--tk-kw);
-}
-.code-hl .tk-lib {
-  color: var(--tk-lib);
-  font-weight: 600;
-}
-.code-hl .tk-fn {
-  color: var(--tk-fn);
-}
-.code-hl .tk-str {
-  color: var(--tk-str);
-}
-.code-hl .tk-re {
-  color: var(--tk-re);
-}
-.code-hl .tk-prop {
-  color: var(--tk-prop);
+.code-hl {
+  .tk-kw {
+    color: var(--tk-kw);
+  }
+  .tk-lib {
+    color: var(--tk-lib);
+    font-weight: 600;
+  }
+  .tk-fn {
+    color: var(--tk-fn);
+  }
+  .tk-str {
+    color: var(--tk-str);
+  }
+  .tk-re {
+    color: var(--tk-re);
+  }
+  .tk-prop {
+    color: var(--tk-prop);
+  }
 }
 
 /* мигающий курсор в логотипе */
