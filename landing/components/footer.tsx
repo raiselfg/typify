@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Logo } from "./logo";
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className="border-t border-border bg-card/30 py-12">
       <div className="mx-auto max-w-6xl px-7">

@@ -20,7 +20,7 @@ const LIBS_INFO = [
   },
 ];
 
-export function Libraries() {
+export default function Libraries() {
   return (
     <section id="libraries" className="mx-auto max-w-6xl px-7 py-20">
       <SectionHead

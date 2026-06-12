@@ -28,7 +28,7 @@ const FAQS = [
     a: "Completely. Typify works in your browser without limits, subscriptions, or restrictions.",
   },
 ];
-export function Faq() {
+export default function Faq() {
   return (
     <section id="faq" className="mx-auto max-w-6xl px-7 py-20">
       <SectionHead kicker="FAQ" title="Frequently Asked Questions" center />

@@ -1,13 +1,13 @@
-import { Faq } from "@/landing/components/faq";
-import { Footer } from "@/landing/components/footer";
 import { Header } from "@/landing/components/header";
 import { Hero } from "@/landing/components/hero";
-import { HowItWorks } from "@/landing/components/how-it-works";
-import { Libraries } from "@/landing/components/libraries";
 import { SectionHead } from "@/landing/components/section-head";
 import dynamic from "next/dynamic";
 
 const Converter = dynamic(() => import("@/converter/components/converter"));
+const Footer = dynamic(() => import("@/landing/components/footer"));
+const HowItWorks = dynamic(() => import("@/landing/components/how-it-works"));
+const Libraries = dynamic(() => import("@/landing/components/libraries"));
+const Faq = dynamic(() => import("@/landing/components/faq"));
 
 export default function Page() {
   return (

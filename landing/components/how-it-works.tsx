@@ -15,7 +15,7 @@ const STEPS = [
   },
 ];
 
-export function HowItWorks() {
+export default function HowItWorks() {
   return (
     <section id="how" className="mx-auto max-w-6xl px-7 py-20">
       <SectionHead

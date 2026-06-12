@@ -8,7 +8,6 @@ import {
 } from "@/shared/components/ui/toggle-group";
 import { Button } from "@/shared/components/ui/button";
 import { Textarea } from "@/shared/components/ui/textarea";
-import { toast } from "sonner";
 import { generate, highlight } from "@/converter/lib/generate";
 import { Input } from "@/shared/components/ui/input";
 import { Label } from "@/shared/components/ui/label";
@@ -52,7 +51,6 @@ export default function Converter() {
     if (!result.ok || !result.code) return;
     await navigator.clipboard.writeText(result.code);
     setCopied(true);
-    toast.success("Schema copied to clipboard");
     setTimeout(() => setCopied(false), 1600);
   }, [result]);
 
