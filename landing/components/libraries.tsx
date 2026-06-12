@@ -43,9 +43,7 @@ export default function Libraries() {
               <SquareArrowOutUpRight size={20} />
               <h3 className="font-display text-xl font-bold">{lib.name}</h3>
             </Link>
-            <p className="text-[15px] leading-relaxed text-muted-foreground">
-              {lib.desc}
-            </p>
+            <p className="text-muted-foreground">{lib.desc}</p>
           </div>
         ))}
       </div>

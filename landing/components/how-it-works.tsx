@@ -29,11 +29,11 @@ export default function HowItWorks() {
         <div className="absolute top-8 left-0 hidden h-0.5 w-full bg-border md:block" />
 
         {STEPS.map((step, i) => (
-          <div key={i} className="relative z-10 flex flex-col items-center">
+          <div key={i} className="relative flex flex-col items-center">
             <div className="mb-6 flex size-16 items-center justify-center rounded-full border border-border bg-background font-mono text-xl font-bold text-indigo-400 shadow-xl shadow-indigo-500/10 transition-colors group-hover:border-indigo-500">
               {i + 1}
             </div>
-            <h3 className="mb-3 text-center font-display text-lg font-bold">
+            <h3 className="font-display mb-3 text-center text-lg font-bold">
               {step.title}
             </h3>
             <p className="text-center text-sm leading-relaxed text-muted-foreground">

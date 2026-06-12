@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div className="max-w-xs text-center md:text-left">
             <Logo className="text-xl" />
-            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+            <p className="text-sm leading-relaxed text-muted-foreground">
               Instant generation of validation schemas from JSON. Works entirely
               in your browser.
             </p>

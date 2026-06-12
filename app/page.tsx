@@ -12,7 +12,7 @@ const Faq = dynamic(() => import("@/landing/components/faq"));
 export default function Page() {
   return (
     <>
-      <div className="relative z-10 flex min-h-screen flex-col">
+      <div className="relative flex min-h-screen flex-col">
         <Header />
         <main className="flex-1">
           <Hero />

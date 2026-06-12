@@ -35,10 +35,10 @@ export default function Faq() {
       <Accordion type="single" collapsible className="mx-auto max-w-3xl">
         {FAQS.map((f, i) => (
           <AccordionItem key={i} value={`item-${i}`}>
-            <AccordionTrigger className="text-left font-display text-lg font-semibold">
+            <AccordionTrigger className="font-display text-left text-lg font-semibold">
               {f.q}
             </AccordionTrigger>
-            <AccordionContent className="text-[15px] text-muted-foreground">
+            <AccordionContent className="text-muted-foreground">
               {f.a}
             </AccordionContent>
           </AccordionItem>

@@ -24,7 +24,7 @@ export type GenerateResult = {
 export const generate = (
   json: string,
   lib: Lib,
-  name: string = "Schema"
+  name: string = ""
 ): GenerateResult => {
   if (!json.trim()) return { ok: false };
 
@@ -33,7 +33,7 @@ export const generate = (
   try {
     const parsed = JSON.parse(json);
     const schemaNode = inferSchema(parsed);
-    const code = func(schemaNode, { name: name || "Schema" });
+    const code = func(schemaNode, { name: name });
     return { ok: true, code };
   } catch (e) {
     return {
