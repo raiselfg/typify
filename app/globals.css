@@ -149,13 +149,18 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
-    scroll-behavior: smooth;
   }
   body {
     @apply bg-background text-foreground;
   }
   html {
     @apply font-sans;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
   }
 }
 
@@ -197,29 +202,4 @@
   .typify-caret {
     animation: none;
   }
-}
-
-/* фоновая сетка hero */
-.typify-grid {
-  background-image:
-    linear-gradient(
-      color-mix(in oklab, var(--foreground) 4%, transparent) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      color-mix(in oklab, var(--foreground) 4%, transparent) 1px,
-      transparent 1px
-    );
-  background-size: 56px 56px;
-  -webkit-mask-image: radial-gradient(
-    ellipse 90% 60% at 50% 0%,
-    #000 30%,
-    transparent 75%
-  );
-  mask-image: radial-gradient(
-    ellipse 90% 60% at 50% 0%,
-    #000 30%,
-    transparent 75%
-  );
 }
