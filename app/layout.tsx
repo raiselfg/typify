@@ -3,7 +3,6 @@ import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/shared/components/theme-provider";
 import { cn } from "@/shared/lib/utils";
 import { Metadata } from "next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const display = Space_Grotesk({
@@ -44,7 +43,6 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
-        <SpeedInsights />
       </body>
     </html>
   );
