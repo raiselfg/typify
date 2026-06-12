@@ -8,7 +8,7 @@ interface Props {
 export function SectionHead({ kicker, title, sub, center = false }: Props) {
   return (
     <div className={`mb-11 max-w-3xl ${center ? "mx-auto text-center" : ""}`}>
-      <div className="text-md mb-3.5 font-mono tracking-[0.06em] text-indigo-400 uppercase">
+      <div className="text-md mb-3.5 font-mono tracking-[0.06em] text-muted-foreground uppercase">
         {kicker}
       </div>
       <h2 className="font-display text-3xl leading-tight font-bold tracking-tight text-balance sm:text-4xl">

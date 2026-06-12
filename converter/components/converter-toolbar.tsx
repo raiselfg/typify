@@ -84,6 +84,7 @@ export function ConverterToolbar({
         <Button variant="outline" size="sm" onClick={() => setInput(EXAMPLE)}>
           <Sparkles className="size-4" />
           <span className="hidden sm:block">Example</span>
+          <span className="sr-only">Example</span>
         </Button>
         <Button
           variant="outline"
@@ -93,6 +94,7 @@ export function ConverterToolbar({
         >
           <Download className="size-4" />
           <span className="hidden sm:block">Download</span>
+          <span className="sr-only">Download</span>
         </Button>
         <Button
           variant="outline"
@@ -103,6 +105,7 @@ export function ConverterToolbar({
         >
           {copied ? <Check className="size-4" /> : <Copy className="size-4" />}
           <span className="hidden sm:block">{copied ? "Copied" : "Copy"}</span>
+          <span className="sr-only">{copied ? "Copied" : "Copy"}</span>
         </Button>
       </div>
     </div>

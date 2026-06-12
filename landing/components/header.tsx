@@ -35,6 +35,7 @@ function MobileNav() {
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger>
           <TextAlignJustify />
+          <span className="sr-only">Menu</span>
         </SheetTrigger>
         <SheetContent>
           <SheetHeader>

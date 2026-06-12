@@ -15,7 +15,7 @@ export function ConverterOutput({ result, input, lib }: OutputProps) {
     <div className="flex flex-col">
       <div className="flex items-center justify-between border-b px-4 py-2.5 text-xs text-muted-foreground">
         <span className="flex items-center gap-2">
-          <span className="size-1.5 rounded-full bg-indigo-400" />
+          <span className="size-1.5 rounded-full text-muted-foreground" />
           {libLabel} schema
         </span>
         <span>schema.ts</span>

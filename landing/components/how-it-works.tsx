@@ -30,7 +30,7 @@ export default function HowItWorks() {
 
         {STEPS.map((step, i) => (
           <div key={i} className="relative flex flex-col items-center">
-            <div className="mb-6 flex size-16 items-center justify-center rounded-full border border-border bg-background font-mono text-xl font-bold text-indigo-400 shadow-xl shadow-indigo-500/10 transition-colors group-hover:border-indigo-500">
+            <div className="mb-6 flex size-16 items-center justify-center rounded-full border border-border bg-background font-mono text-xl font-bold text-muted-foreground shadow-xl shadow-indigo-500/10 transition-colors group-hover:border-indigo-500">
               {i + 1}
             </div>
             <h3 className="font-display mb-3 text-center text-lg font-bold">
